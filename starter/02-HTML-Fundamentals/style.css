@@ -93,6 +93,7 @@ article {
 
 /* PAGE SECTIONS */
 body {
+  position: relative;
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
@@ -207,3 +208,16 @@ nav a:link:last-child {
 }
 
 /* NOTE -> IMAGES ARE INLINE-block by default  */
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  /* below code means move the element 50px from the top and 50px from left */
+  /* top: 50px;
+  left: 50px; */
+  /* need to set body relative to make it work */
+  bottom: 50px;
+  right: 50px;
+}
