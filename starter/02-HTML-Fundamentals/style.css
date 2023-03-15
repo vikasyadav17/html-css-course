@@ -79,3 +79,53 @@ aside {
 body {
   /* background-color: orangered; */
 }
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* it will look for article that has first child as p */
+/* in this case its header element */
+/* will not work article p:first-child {
+  color: red;
+} */
+
+/* will work as article last element is p */
+/* article p:last-child {
+  color: red;
+} */
+
+/* will target anchor element that has href attribute */
+/*  lvha - shortcut and this is how the order of these should be  */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #7777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
