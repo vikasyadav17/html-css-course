@@ -221,3 +221,32 @@ button {
   bottom: 50px;
   right: 50px;
 }
+
+/*  pseudo elements with :: but pseudo class with single : */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+/* plus is for siblings */
+/* h3 + p::first-line {
+  
+} */
+
+h2 {
+  position: relative;
+}
+/*  Creating pseudo element */
+/*  every pseudo element is inline */
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
