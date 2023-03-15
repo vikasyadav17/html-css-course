@@ -25,9 +25,12 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 h4 {
   font-size: 20px;
@@ -39,15 +42,29 @@ p {
   font-size: 22px;
 
   line-height: 1.5;
+  margin-bottom: 15px;
 }
 li {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
 /* footer p {
   font-size: 16px;
 } */
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
 
 #author {
   font-style: italic;
@@ -66,6 +83,10 @@ li {
 .related {
   list-style: none;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   color: #444;
@@ -79,12 +100,20 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
 }
 
 aside {
+  padding: 50px 0;
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  width: 500px;
 }
 
 /* .first-li {
@@ -140,3 +169,10 @@ a:active {
 
 /*  priority order */
 /* declaration marked -> inline -> id has the most priority then class then element selector(p,div) then universal * */
+
+.post-img {
+  /* width 100 percent means the size of parent container */
+  width: 100%;
+  height: auto;
+  /* use auto when height is already specified somewhere */
+}
