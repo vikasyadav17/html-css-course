@@ -42,6 +42,7 @@ p {
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 /* footer p {
@@ -66,18 +67,24 @@ li {
   list-style: none;
 }
 
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+}
+
 .main-header {
   background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
 }
 
 aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-}
-
-body {
-  /* background-color: orangered; */
 }
 
 /* .first-li {
@@ -90,6 +97,7 @@ li:first-child {
 
 li:last-child {
   font-style: italic;
+  margin-bottom: 0;
 }
 
 li:nth-child(even) {
