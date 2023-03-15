@@ -237,7 +237,7 @@ h2 {
 }
 /*  Creating pseudo element */
 /*  every pseudo element is inline */
-
+/* since its is absolute element , doesnt matter if it is on top or bottom */
 h2::after {
   content: "TOP";
   background-color: #ffe70e;
