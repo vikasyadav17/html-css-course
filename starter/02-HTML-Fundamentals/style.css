@@ -32,6 +32,7 @@ h3 {
   font-size: 30px;
   margin-bottom: 30px;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 h4 {
   font-size: 20px;
@@ -84,11 +85,13 @@ article {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -100,7 +103,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 1200px;
   /*  margin of the left must be equal to margin of the left . so it would center */
   /* margin-left: auto;
   margin-right: auto; */
@@ -109,6 +112,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+  /* background-color: red; */
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -122,11 +126,10 @@ body {
 }
 
 aside {
-  padding: 50px 0;
+  padding: 50px 40px;
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  width: 500px;
 }
 
 /* .first-li {
@@ -249,4 +252,60 @@ h2::after {
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+/* Floats */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 80px; */
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* .post-header {
+  float: left;
+}
+
+.related {
+  float: right;
+} */
+
+article {
+  background-color: green;
+  width: 825px;
+  float: left;
+}
+
+aside {
+  background-color: red;
+  width: 300px;
+  float: right;
+}
+
+footer {
+  background-color: yellow;
+  clear: both;
 }
