@@ -40,6 +40,34 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* align-self: ; */
+        gap: 30px;
+      }
+      .el {
+        /* DEFAULTS: */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+        /* width === flex-basis in flexbox */
+        /* By default , flexbox shrinkes the element to make the fit in container
+        so even if you add flex-basis of 200 . Flexbox might try to reduce the elements
+        size on the base of container size */
+        flex-basis: 100px;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+      }
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
@@ -51,8 +79,8 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <!-- <div class="el el--7">to</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
