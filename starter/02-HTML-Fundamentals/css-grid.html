@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /* height: 150px; */
       }
       .el--4 {
         background-color: goldenrod;
@@ -40,14 +40,23 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr auto;
+        height: 500px;
+
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
-        font-size: 40px;
-        margin: 100px;
+        font-size: 10px;
+        margin: 40px;
 
         width: 1000px;
         height: 600px;
@@ -68,13 +77,13 @@
       <div class="el el--8">(8) learn</div>
     </div>
 
-    <div class="container--2">
+    <!-- <div class="container--2">
       <div class="el el--1">(1)</div>
       <div class="el el--3">(3)</div>
       <div class="el el--4">(4)</div>
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
       <div class="el el--7">(7)</div>
-    </div>
+    </div> -->
   </body>
 </html>
