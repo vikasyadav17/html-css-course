@@ -202,7 +202,7 @@ nav a:link {
   /* Will occupy all the width and set vertically nexxt to each other */
   /* display: block; */
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: inline-block;
 }
 
@@ -255,19 +255,18 @@ h2::after {
 }
 
 /* Floats */
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
-}
+} */
 
-.author {
-  /* padding-left: 80px; */
+/* .author {
   float: left;
   margin-top: 10px;
   margin-left: 20px;
-}
+} */
 
-h1 {
+/* h1 {
   float: left;
 }
 
@@ -283,7 +282,7 @@ nav {
   clear: both;
   content: "";
   display: block;
-}
+} */
 
 /* .post-header {
   float: left;
@@ -293,19 +292,22 @@ nav {
   float: right;
 } */
 
-article {
-  background-color: green;
+/* article {
   width: 825px;
   float: left;
 }
 
 aside {
-  background-color: red;
   width: 300px;
   float: right;
 }
 
 footer {
-  background-color: yellow;
   clear: both;
+} */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -44,7 +44,7 @@
         align-items: center;
         justify-content: flex-start;
         /* align-self: ; */
-        gap: 30px;
+        gap: 10px;
       }
       .el {
         /* DEFAULTS: */
@@ -55,7 +55,13 @@
         /* By default , flexbox shrinkes the element to make the fit in container
         so even if you add flex-basis of 200 . Flexbox might try to reduce the elements
         size on the base of container size */
-        flex-basis: 100px;
+        /* flex-basis: 200px; */
+        /* This will remove the ability from flexbox to shrink the elements to fit the 
+        container */
+        flex-shrink: 0;
+        /* flex-grow:1 Will make the elements to evenly divide the space so that none 
+        of the space left unused */
+        flex-grow: 1;
       }
 
       .el--1 {
